@@ -6,12 +6,12 @@
 
 @section('contenuto-comics')
     <div class="container">
-        <h1>Questa è la pagina comics</h1>
+
         <div class="row row-cols-1 row-cols-md-2 g-4">
             @foreach ($comics as $comic)
                 <div class="col">
-                    <div class="card">
-                        <img src={{ $comic['thumb'] }} class="card-img-top" alt="...">
+                    <div class="card h-100">
+                        <img src={{ $comic['thumb'] }} class="card-img-top" alt={{ $comic['title'] }}>
                         <div class="card-body">
                             <h5 class="card-title">{{ $comic['title'] }}</h5>
 
